@@ -1,0 +1,9 @@
+body, html {
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+}
+
+body div {
+  margin: auto;
+}
