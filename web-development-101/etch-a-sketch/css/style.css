@@ -1,38 +1,5 @@
-:root {
-  --gridSize: 16;
-}
-
-label {
-  margin-right: 10px;
-}
-
-input:checked {
-  border: 6px solid black;
-}
-
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-
-  border: 2px solid #999;
-  transition: 0.2s all linear;
-  margin-right: 5px;
-
-  position: relative;
-  top: 2px;
-}
-
 body {
   padding: 0;
-}
-
-button#clear {
-  float: right;
 }
 
 button#width {
@@ -41,7 +8,13 @@ button#width {
 }
 
 div.options {
+  display: flex;
   margin-top: 8px;
+  justify-content: center;
+}
+
+label {
+  margin-right: 10px;
 }
 
 #width {
@@ -57,8 +30,6 @@ div.options {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(var(--gridSize), auto);
-  grid-template-rows: repeat(var(--gridSize), auto);
   height: 500px;
   width: 500px;
 }
